@@ -1,6 +1,26 @@
 ---
 import Layout from "../Layout.astro"
+import Card from "../components/Card.astro"
 ---
 <Layout>
     <h1>Program</h1>
+
+ <div class="grid">
+    <Card header="03. PIXLEARTH" text="Knasten, Havnegade 14"/>
+
+    <!-- <Card text="04. BRON, BROEN, BRIDGE"/>
+    <Card text="50. MYCELIUM NETWORK"/>
+    <Card text="28. AMBIENT ASYLUM"/>
+    <Card text="08. LES YEUX (THE EYES)"/>
+    <Card text="07. VIVID VERVE"/> -->
+</div>
+
 </Layout>
+
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+    }
+</style>

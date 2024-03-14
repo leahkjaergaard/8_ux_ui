@@ -1,14 +1,16 @@
 ---
 const image = Astro.props.image;
+const header = Astro.props.header;
 const text = Astro.props.text;
+
+//man kan skrive ovenstående på nedenstående måde (en kortere verison):
+// const {image, header, text} = Astro.props;
+
 ---
 
-    <article>
-        
-        
-        <p>{text}</p>
-	</article>
+<article>
+    <h2>{header}</h2>
+    <p>{text}</p>
+</article>
 
-    <style>
-
-    </style>
+<style></style>
