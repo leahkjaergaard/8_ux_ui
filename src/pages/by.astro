@@ -1,0 +1,23 @@
+---
+import Layout from "../Layout.astro"
+import Card from "../components/Card.astro";
+---
+<Layout>
+    <h1>København K</h1>
+
+
+
+    <div class="grid">
+        <Card text="København S"/>
+        <Card text="København Ø"/>
+        <Card text="København V"/>
+    </div>
+</Layout>
+
+
+<style>
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+</style>
