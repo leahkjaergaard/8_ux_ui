@@ -2,14 +2,31 @@
 const image = Astro.props.image;
 const header = Astro.props.header;
 const text = Astro.props.text;
+<<<<<<< HEAD
 
 //man kan skrive ovenstående på nedenstående måde (en kortere verison):
 // const {image, header, text} = Astro.props;
 ---
 
 <article>
+=======
+const alt = Astro.props.alt;
+---
+
+<article>
+  <img src={image} alt={alt} />
+>>>>>>> by-siden
   <h2>{header}</h2>
   <p>{text}</p>
 </article>
 
+<<<<<<< HEAD
 <style></style>
+=======
+<style>
+  h2,
+  p {
+    color: white;
+  }
+</style>
+>>>>>>> by-siden
