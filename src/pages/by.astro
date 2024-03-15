@@ -1,41 +1,38 @@
 ---
-import Layout from "../Layout.astro" 
+import Layout from "../Layout.astro";
 import Card from "../components/Card.astro";
 ---
+
 <Layout>
-    <h1>København K</h1>
+  <h1>København Khhh</h1>
 
-    <div class="grid">
-        <Card text="Værk1">
-        <img src="/03.pixelearth.png" alt="En by">  </Card>
+  <div class="grid">
+    <Card text="Værk1" image="/03.pixelearth.png" alt="Pixelearth om mnatten" />
+    <Card text="Værk2" image="/billeder/test.jpg" alt="noghet andet om mnatten" />
 
-        <Card text="Værk2"/>
+    <Card text="Værk2" />
 
-        <!-- <Card text="Værk3"/>
+    <!-- <Card text="Værk3"/>
         <Card text="Værk4"/>
         <Card text="Værk5"/>
         <Card text="Værk6"/> -->
-    </div>
+  </div>
 </Layout>
 
-
 <style>
-    .grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    body {
+  body {
     background-color: #181818;
-    }
+  }
 
-    h1 {
+  h1 {
     color: aliceblue;
-    }
-      h2 {
+  }
+  h2 {
     color: aliceblue;
-    }
-
-    
+  }
 </style>
-

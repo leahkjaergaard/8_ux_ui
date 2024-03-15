@@ -2,17 +2,18 @@
 const image = Astro.props.image;
 const header = Astro.props.header;
 const text = Astro.props.text;
+const alt = Astro.props.alt;
 ---
 
-
-    <article>
-        <p>{text}</p>
-    <slot></>
-	</article>
-
 <article>
-    <h2>{header}</h2>
-    <p>{text}</p>
+  <img src={image} alt={alt} />
+  <h2>{header}</h2>
+  <p>{text}</p>
 </article>
 
-<style></style>
+<style>
+  h2,
+  p {
+    color: white;
+  }
+</style>
