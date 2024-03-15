@@ -5,14 +5,16 @@ import Card from "../components/Card.astro";
 <Layout>
     <h1>København K</h1>
 
-
-
     <div class="grid">
-        <Card text="København S"/>
-        <Card text="København Ø"/>
-        <Card text="København V"/>
-        <Card text="København K"/>
+        <Card text="Værk1">
+        <img src="/03.pixelearth.png" alt="En by">  </Card>
 
+        <Card text="Værk2"/>
+
+        <!-- <Card text="Værk3"/>
+        <Card text="Værk4"/>
+        <Card text="Værk5"/>
+        <Card text="Værk6"/> -->
     </div>
 </Layout>
 
@@ -20,6 +22,6 @@ import Card from "../components/Card.astro";
 <style>
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 </style>
